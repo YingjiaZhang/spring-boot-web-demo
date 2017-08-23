@@ -1,4 +1,0 @@
-<changeFiles>
-  <file path="./db/V1_test_migration.js"/>
-  <file path="./db/V2_test_migration.js"/>
-</changeFiles>
