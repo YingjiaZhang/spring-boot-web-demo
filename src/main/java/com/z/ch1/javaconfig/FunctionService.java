@@ -1,4 +1,4 @@
-package com.z.ch1.di;
+package com.z.ch1.javaconfig;
 
 import org.springframework.stereotype.Service;
 
@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
  * 编写功能类的 Bean
  */
 
-@Service
 public class FunctionService {
     public String sayHello(String word) {
         return "Hello " + word + "!";

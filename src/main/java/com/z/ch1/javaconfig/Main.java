@@ -1,4 +1,4 @@
-package com.z.ch1.di;
+package com.z.ch1.javaconfig;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -8,9 +8,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         // 使用 AnnotationConfigApplicationContext 作为 Spring 容器 ，接受输入一个配置类作为参数
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DIConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
         UseFunctionService useFunctionService = context.getBean(UseFunctionService.class);
-        System.out.println(useFunctionService.useSayHello("di"));
+        System.out.println(useFunctionService.useSayHello("javaConfig"));
         context.close();
     }
 
